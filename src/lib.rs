@@ -61,6 +61,8 @@ pub use iter::{BitIter, DrainBitIter};
 pub use iter::{BitParIter, BitProducer};
 pub use ops::{BitSetAll, BitSetAnd, BitSetNot, BitSetOr, BitSetXor};
 
+use serde::{Serialize, Deserialize};
+
 use util::*;
 
 /// A `BitSet` is a simple set designed to track which indices are placed
