@@ -68,8 +68,7 @@ use util::*;
 ///
 /// Note, a `BitSet` is limited by design to only `usize**4` indices.
 /// Adding beyond this limit will cause the `BitSet` to panic.
-#[derive(Clone, Debug, Default)]
-#[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
+#[derive(Clone, Debug, Default, Serialize, Deserialize)]
 pub struct BitSet {
     layer3: usize,
     layer2: Vec<usize>,
